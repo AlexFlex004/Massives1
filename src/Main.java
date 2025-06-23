@@ -4,66 +4,64 @@ import java.util.Arrays;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-       //CASE1//
+        //CASE1//
         System.out.println("CASE 1");
         ////////////////////////////
-        int [] massOne = new int [3];
+        int[] massOne = new int[3];
         massOne[0] = 1;
         massOne[1] = 2;
         massOne[2] = 3;
         ////////////////////////////
-        float [] massTwo = {1.57F, 7.654F, 9.986F};
+        float[] massTwo = {1.57F, 7.654F, 9.986F};
         ////////////////////////////
-        byte [] massThree = {4, 86, 116};
+        byte[] massThree = {4, 86, 116};
         ////////////////////////////
         System.out.println();
-
-//Задание 2, 3 можно сделать через Arrays, но в задании показан пример без квадратных скобок.
 
         //CASE2//
         System.out.println("CASE 2");
-        System.out.print(massOne[0] + ", " );
-        System.out.print(massOne[1] + ", " );
-        System.out.print(massOne[2]);
-        /////////////////////////////
-        System.out.println();
-        System.out.print(massTwo[0] + ", " );
-        System.out.print(massTwo[1] + ", " );
-        System.out.print(massTwo[2]);
-        /////////////////////////////
-        System.out.println();
-        System.out.print(massThree[0] + ", " );
-        System.out.print(massThree[1] + ", " );
-        System.out.print(massThree[2]);
-        /////////////////////////////
-        System.out.println();
-        System.out.println();
-
-        //CASE3//
-        System.out.println("CASE 3");
-        System.out.print(massOne[2] + ", " );
-        System.out.print(massOne[1] + ", " );
-        System.out.print(massOne[0]);
-        /////////////////////////////
-        System.out.println();
-        System.out.print(massTwo[2] + ", " );
-        System.out.print(massTwo[1] + ", " );
-        System.out.print(massTwo[0]);
-        /////////////////////////////
-        System.out.println();
-        System.out.print(massThree[2] + ", " );
-        System.out.print(massThree[1] + ", " );
-        System.out.print(massThree[0]);
-        /////////////////////////////
-        System.out.println();
-        System.out.println();
-
-        //CASE4//
-        System.out.println("CASE 4");
         for (int i = 0; i < massOne.length; i++) {
-            if (massOne[i] % 2 != 0);
-            massOne[i] = massOne[i] + 1;
+            System.out.print(massOne[i] + ", ");
         }
-        System.out.println(Arrays.toString(massOne));
+        System.out.println();
+            /////////////////////////////
+        for (int i = 0; i < massTwo.length; i++) {
+            System.out.print(massTwo[i] + ", ");
+        }
+        System.out.println();
+            /////////////////////////////
+        for (int i = 0; i < massThree.length; i++) {
+            System.out.print(massThree[i] + ", ");
+        }
+            /////////////////////////////
+            System.out.println();
+            System.out.println();
+
+            //CASE3//
+            System.out.println("CASE 3");
+        for (int i = massOne.length - 1; i >= 0; i--) {
+            System.out.print(massOne[i] + ", ");
+        }
+        System.out.println();
+            /////////////////////////////
+        for (int i = massTwo.length - 1; i >= 0; i--) {
+            System.out.print(massTwo[i] + ", ");
+        }
+        System.out.println();
+            /////////////////////////////
+        for (int i = massThree.length - 1; i >= 0; i--) {
+            System.out.print(massThree[i] + ", ");
+        }
+            /////////////////////////////
+            System.out.println();
+            System.out.println();
+
+            //CASE4//
+            System.out.println("CASE 4");
+            for (int i = 0; i < massOne.length; i++) {
+                if (massOne[i] % 2 != 0) ;
+                massOne[i] = massOne[i] + 1;
+            }
+            System.out.println(Arrays.toString(massOne));
+        }
     }
-}
