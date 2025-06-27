@@ -21,37 +21,61 @@ public class Main {
         //CASE2//
         System.out.println("CASE 2");
         for (int i = 0; i < massOne.length; i++) {
-            System.out.print(massOne[i] + ", ");
+            if (i < 2) {
+                System.out.print(massOne[i] + ", ");
+            } else {
+                System.out.print(massOne[i]);
+            }
         }
-        System.out.println();
+            System.out.println();
             /////////////////////////////
-        for (int i = 0; i < massTwo.length; i++) {
-            System.out.print(massTwo[i] + ", ");
-        }
-        System.out.println();
+            for (int i = 0; i < massTwo.length; i++) {
+                if (i < 2) {
+                    System.out.print(massTwo[i] + ", ");
+                } else {
+                    System.out.print(massTwo[i]);
+                }
+            }
+            System.out.println();
             /////////////////////////////
-        for (int i = 0; i < massThree.length; i++) {
-            System.out.print(massThree[i] + ", ");
-        }
+            for (int i = 0; i < massThree.length; i++) {
+                if (i < 2) {
+                    System.out.print(massThree[i] + ", ");
+                } else {
+                    System.out.print(massThree[i]);
+                }
+            }
             /////////////////////////////
             System.out.println();
             System.out.println();
 
             //CASE3//
             System.out.println("CASE 3");
-        for (int i = massOne.length - 1; i >= 0; i--) {
-            System.out.print(massOne[i] + ", ");
-        }
-        System.out.println();
+            for (int i = massOne.length - 1; i >= 0; i--) {
+                if (i > 0) {
+                    System.out.print(massOne[i] + ", ");
+                } else {
+                    System.out.print(massOne[i]);
+                }
+            }
+            System.out.println();
             /////////////////////////////
-        for (int i = massTwo.length - 1; i >= 0; i--) {
-            System.out.print(massTwo[i] + ", ");
-        }
-        System.out.println();
+            for (int i = massTwo.length - 1; i >= 0; i--) {
+                if (i > 0) {
+                    System.out.print(massTwo[i] + ", ");
+                } else {
+                    System.out.print(massTwo[i]);
+                }
+            }
+            System.out.println();
             /////////////////////////////
-        for (int i = massThree.length - 1; i >= 0; i--) {
-            System.out.print(massThree[i] + ", ");
-        }
+            for (int i = massThree.length - 1; i >= 0; i--) {
+                if (i > 0) {
+                    System.out.print(massThree[i] + ", ");
+                } else {
+                    System.out.print(massThree[i]);
+                }
+            }
             /////////////////////////////
             System.out.println();
             System.out.println();
